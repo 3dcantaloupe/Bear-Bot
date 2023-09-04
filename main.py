@@ -45,6 +45,16 @@ async def on_message(message):
           
           elif msg == "help":
             await message.channel.send("go help yourself loafer!")
+
+          elif msg == "i beg thou, please help me oh great bear":
+            await message.channel.send("You know, you are like an ant to me, but I guess I can help you.")
+            await message.channel.send("Here are some commands you can use:")
+            await message.channel.send("bear hi")
+            await message.channel.send("bear su")
+            await message.channel.send("bear help")
+            await message.channel.send("bear i love you")
+            await message.channel.send("bear i hate you")
+            await message.channel.send("bear <search term>")
           
           elif msg == "i love you":
             await message.channel.send('I love you too ' + message.author.mention + '!')
