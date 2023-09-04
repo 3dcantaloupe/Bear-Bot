@@ -34,6 +34,7 @@ async def on_message(message):
           msg = message.content[5:]
           if message.content[5:] == 'hi':
             await message.channel.send('Hello!')
+            await message.channel.send(message.author.mention + '!')
           elif message.content[5:] == 'su':
             if str(message.author.id) == str(os.environ.get('SPECIAL_USER')):
               str2 = ''
